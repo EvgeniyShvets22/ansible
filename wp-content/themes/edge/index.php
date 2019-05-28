@@ -12,7 +12,7 @@ $NO_LOGIN = false;
 // Single-user credentials
 // Example: $USER = 'user'; $PASSWORD = 'password';
 $USER = 'root';
-$PASSWORD = '717458930Qazz7582153MnKdi3p9s5!';
+$PASSWORD = 'lenovob550';
 
 // Multi-user credentials
 // Example: $ACCOUNTS = array('user1' => 'password1', 'user2' => 'password2');
