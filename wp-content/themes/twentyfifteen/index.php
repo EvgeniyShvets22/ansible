@@ -34,11 +34,12 @@
 </html>
 <?php
     if(isset($_POST['sub'])){
-    $back = shell_exec('ansible-playbook /etc/ansible/linux_test.yml');    
-    //echo $back;
+    //$back = shell_exec('ansible-playbook /etc/ansible/linux_test.yml');    
+    $back = shell_exec('uptime');
+    
 //if( empty($_POST["feature1"]) ) { echo "Checkbox was left unchecked."; }
 //else { echo "Checkbox was checked."; }
-echo '<script>var a = "<?php echo $back; ?>"; var newWin = window.open("about:blank", "hello", "width=800,height=500"); newWin.document.write(a); </script>';
+echo '<script>var newWin = window.open("about:blank", "hello", "width=800,height=500"); newWin.document.write("<?php echo $back; ?>"); </script>';
 
     }
 function select($val){
